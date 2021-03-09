@@ -2,7 +2,7 @@
      <div class="card">
        <div class="imgpos">
          <nuxt-link :to="`/product/${item.code}`">
-        <img :src="`${host}/${item.picture}`" class="cardimg" :alt="item.alt"/>
+        <img :src="`${item.picture}`" class="cardimg" :alt="item.alt"/>
         </nuxt-link>
         </div>
         <div class="cardbody">

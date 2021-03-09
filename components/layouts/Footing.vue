@@ -24,7 +24,7 @@
     </svg>
   <section class="main3">
     <div class="logo">
-        <img src="~/assets/imgs/logo.png" class="logo1"/>
+        <img src="~/assets/imgs/shop.jpeg" class="logo1"/>
         <span><span class="chantos">Sh</span>Psy </span>
       </div>
       <footercard  v-for="(item, i) in items" :key="i" :item="item"/>

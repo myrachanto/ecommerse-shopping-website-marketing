@@ -6,10 +6,10 @@
       <div class="flexing">
       <div class="griding">
         <div class="imaging">
-        <img :src="`${host}/${product.picture}`" :alt="product.alt" class="cardimg1"/>
+        <img :src="`${product.picture}`" :alt="product.alt" class="cardimg1"/>
       </div>
       <div class="comment">
-      <h2 class="h2c">{{product.name}}</h2>
+      <h2 class="h2c">{{product.title}}</h2>
        <div v-html="product.description"></div>
         <div class="sd flex justify-start items-center my-5">
         <productratings />
@@ -51,31 +51,86 @@
 
 <script>
 import Productratings from '~/components/component/productratings.vue'
-import { http, host } from '~/common/index.js'
+// import { http, host } from '~/common/index.js'
 export default {
   components: { Productratings },
   data () {
     return {
-      host
-    }
-  },
-  async asyncData ({ params }) {
-    let items = []
-    let product = {}
-    console.log(params)
-    try {
-      const { data } = await http.get('/productlimit')
-      const response = await http.get(`/product/${params.code}`)
-      items = data
-      product = response.data
-      // console.log(items)
-      return { items, product }
-    } catch (err) {
-      console.log(err)
+      product: {
+        id: 2,
+        picture: `${require('~/assets/imgs/products/macbook.png')}`,
+        oldprice: 2000,
+        newprice: 1800,
+        title: 'Mac book',
+        alt: 'Mac book',
+        price: 300,
+        photos: 5,
+        description: 'The MacBook Air is a line of laptop computers developed and manufactured by Apple Inc. It consists of a full-size keyboard, a machined aluminum case, and, in the more modern versions, a thin light structure'
+      },
+      items: [
+        {
+          id: 1,
+          picture: `${require('~/assets/imgs/products/macbook air.jpg')}`,
+          oldprice: 2500,
+          newprice: 2300,
+          title: 'Mac book air',
+          alt: 'Mac book air',
+          price: 400,
+          photos: 3,
+          description: 'mac book air '
+        },
+        {
+          id: 2,
+          picture: `${require('~/assets/imgs/products/macbook.png')}`,
+          oldprice: 2000,
+          newprice: 1800,
+          title: 'Mac book',
+          alt: 'Mac book',
+          price: 300,
+          photos: 5,
+          description: 'Mac book'
+        },
+        {
+          id: 3,
+          picture: `${require('~/assets/imgs/products/macbook pro.jpg')}`,
+          oldprice: 3000,
+          newprice: 2700,
+          title: 'Apple macbook pro ',
+          alt: 'mac book',
+          price: 900,
+          photos: 2,
+          description: 'mac book'
+        },
+        {
+          id: 4,
+          picture: `${require('~/assets/imgs/products/macbook.jpg')}`,
+          oldprice: 3000,
+          newprice: 2700,
+          title: 'Apple macbook pro ',
+          alt: 'mac book',
+          price: 900,
+          photos: 2,
+          description: 'mac book'
+        }
+      ]
     }
   }
+  // async asyncData ({ params }) {
+  //   let items = []
+  //   let product = {}
+  //   console.log(params)
+  //   try {
+  //     const { data } = await http.get('/productlimit')
+  //     const response = await http.get(`/product/${params.code}`)
+  //     items = data
+  //     product = response.data
+  //     // console.log(items)
+  //     return { items, product }
+  //   } catch (err) {
+  //     console.log(err)
+  //   }
+  // }
 }
-
 </script>
 
 <style scoped>

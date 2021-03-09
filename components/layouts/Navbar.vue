@@ -4,7 +4,7 @@
     <div class="nav">
       <nuxt-link to="/" class="listy">
         <div class="logo">
-            <img src="~/assets/imgs/logo.png" class="logo1"/>
+            <img src="~/assets/imgs/shop.jpeg" class="logo1"/>
             <span><span class="chantos">Sh</span>Psy </span>
           </div>
       </nuxt-link>
