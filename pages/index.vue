@@ -90,6 +90,94 @@ export default {
           price: 900,
           photos: 2,
           description: 'The MacBook Air is a line of laptop computers developed and manufactured by Apple Inc. It consists of a full-size keyboard, a machined aluminum case, and, in the more modern versions, a thin light structure'
+        },
+        {
+          id: 5,
+          picture: `${require('~/assets/imgs/products/iphone1.jpeg')}`,
+          oldprice: 2500,
+          newprice: 2300,
+          title: 'Iphone 1',
+          alt: 'Iphone 1',
+          price: 400,
+          photos: 3,
+          description: 'The MacBook Air is a line of laptop computers developed and manufactured by Apple Inc. It consists of a full-size keyboard, a machined aluminum case, and, in the more modern versions, a thin light structure'
+        },
+        {
+          id: 6,
+          picture: `${require('~/assets/imgs/products/iphone2.jpeg')}`,
+          oldprice: 2000,
+          newprice: 1800,
+          title: 'iphone 2',
+          alt: 'iphone 2',
+          price: 300,
+          photos: 5,
+          description: 'The MacBook Air is a line of laptop computers developed and manufactured by Apple Inc. It consists of a full-size keyboard, a machined aluminum case, and, in the more modern versions, a thin light structure'
+        },
+        {
+          id: 7,
+          picture: `${require('~/assets/imgs/products/iphone3.png')}`,
+          oldprice: 3000,
+          newprice: 2700,
+          title: 'Iphone 3 ',
+          alt: 'iphone 3',
+          price: 900,
+          photos: 2,
+          description: 'The MacBook Air is a line of laptop computers developed and manufactured by Apple Inc. It consists of a full-size keyboard, a machined aluminum case, and, in the more modern versions, a thin light structure'
+        },
+        {
+          id: 8,
+          picture: `${require('~/assets/imgs/products/iphone4.jpeg')}`,
+          oldprice: 3000,
+          newprice: 2700,
+          title: 'Iphone 4',
+          alt: 'iphone 4',
+          price: 900,
+          photos: 2,
+          description: 'The MacBook Air is a line of laptop computers developed and manufactured by Apple Inc. It consists of a full-size keyboard, a machined aluminum case, and, in the more modern versions, a thin light structure'
+        },
+        {
+          id: 9,
+          picture: `${require('~/assets/imgs/products/desktop1.jpeg')}`,
+          oldprice: 2500,
+          newprice: 2300,
+          title: 'Mac desktop',
+          alt: 'Mac desktop',
+          price: 400,
+          photos: 3,
+          description: 'The MacBook Air is a line of laptop computers developed and manufactured by Apple Inc. It consists of a full-size keyboard, a machined aluminum case, and, in the more modern versions, a thin light structure'
+        },
+        {
+          id: 10,
+          picture: `${require('~/assets/imgs/products/desktop2.jpeg')}`,
+          oldprice: 2000,
+          newprice: 1800,
+          title: 'Mac desktop 2',
+          alt: 'Mac desktop 2',
+          price: 300,
+          photos: 5,
+          description: 'The MacBook Air is a line of laptop computers developed and manufactured by Apple Inc. It consists of a full-size keyboard, a machined aluminum case, and, in the more modern versions, a thin light structure'
+        },
+        {
+          id: 11,
+          picture: `${require('~/assets/imgs/products/destop3.jpeg')}`,
+          oldprice: 3000,
+          newprice: 2700,
+          title: 'Apple macbook pro ',
+          alt: 'mac book',
+          price: 900,
+          photos: 2,
+          description: 'The MacBook Air is a line of laptop computers developed and manufactured by Apple Inc. It consists of a full-size keyboard, a machined aluminum case, and, in the more modern versions, a thin light structure'
+        },
+        {
+          id: 12,
+          picture: `${require('~/assets/imgs/products/desktop4.jpeg')}`,
+          oldprice: 3000,
+          newprice: 2700,
+          title: 'Desktop apple ',
+          alt: 'Desktop apple',
+          price: 900,
+          photos: 2,
+          description: 'The MacBook Air is a line of laptop computers developed and manufactured by Apple Inc. It consists of a full-size keyboard, a machined aluminum case, and, in the more modern versions, a thin light structure'
         }
       ]
     }

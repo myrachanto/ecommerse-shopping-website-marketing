@@ -11,8 +11,8 @@
       <div class="relative">
     <nav :class="isOpen ? 'overnav' : 'hidden'" class="menu2">
             <nuxt-link to="/allproducts" class="menulist2">Laptops</nuxt-link>
-            <nuxt-link to="/allproducts" class="menulist2">Computers</nuxt-link>
-            <nuxt-link to="/allproducts" class="menulist2">Phones</nuxt-link>
+            <nuxt-link to="/computers" class="menulist2">Computers</nuxt-link>
+            <nuxt-link to="/phones" class="menulist2">Phones</nuxt-link>
             <nuxt-link to="/allproducts" class="menulist2">Tablets</nuxt-link>
             <nuxt-link to="/allproducts" class="menulist2">Printers</nuxt-link>
             <div >
